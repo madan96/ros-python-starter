@@ -1,5 +1,6 @@
+#!/usr/bin/env python3
 from python_starter.structs import Dog
 
 if __name__ == "__main__":
     dog = Dog("tmp", "tmp")
-    print (f"Dog is good!" if dog.is_good() else "Dog is doog!")
+    print(f"Dog is good!" if dog.is_good() else "Dog is doog!")
