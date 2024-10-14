@@ -55,6 +55,7 @@ def _main() -> None:
     # Validate the config.
     assert "developer" in config, "Missing developer name in config file"
     developer = config["developer"]
+    developer_email = config["developer-email"]
     github_username = config["github-username"]
     assert not " " in github_username, "Malformed GitHub username"
     package_name = config["your-package-name"]
@@ -116,6 +117,7 @@ def _main() -> None:
     # Replace all occurrences of default names.
     substitutions = {
         "Tom Silver": developer,
+        "tom@silver.com": developer_email,
         "tomsilver": github_username,
         "python-starter": repo_name,
         "python_starter": package_name,
