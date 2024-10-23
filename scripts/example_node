@@ -3,4 +3,4 @@ from python_starter.structs import Dog
 
 if __name__ == "__main__":
     dog = Dog("tmp", "tmp")
-    print(f"Dog is good!" if dog.is_good() else "Dog is doog!")
+    print(f"\n[INFO] Dog is good!\n" if dog.is_good() else "\n[INFO] Dog is doog!\n")

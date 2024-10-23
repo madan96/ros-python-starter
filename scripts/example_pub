@@ -1,0 +1,15 @@
+#!/usr/bin/env python3
+import rospy
+from std_msgs.msg import Bool
+
+from python_starter.structs import Dog
+
+if __name__ == "__main__":
+    dog = Dog("tmp", "tmp")
+    pub = rospy.Publisher("dog_status", Bool, queue_size=1)
+    rospy.init_node('talker', anonymous=True, disable_signals=True)
+    rate = rospy.Rate(10)
+    while not rospy.is_shutdown():
+        pub.publish(dog.is_good())
+        # rate.sleep()                                                
+

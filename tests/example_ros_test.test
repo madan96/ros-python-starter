@@ -1,0 +1,4 @@
+<launch>
+  <node pkg="python_starter" type="example_pub" name="talker" />
+  <test test-name="pubnode" pkg="python_starter" type="test_ros_node.py" />
+</launch>
