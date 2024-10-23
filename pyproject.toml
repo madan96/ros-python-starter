@@ -7,7 +7,7 @@ name = "python_starter"
 version = "0.1.0"
 description = "A basic starter for Python packages."
 readme = "README.md"
-requires-python = ">=3.11"
+requires-python = ">=3.10"
 dependencies = [
    "matplotlib",
    "numpy",

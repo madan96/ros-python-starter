@@ -7,9 +7,9 @@ project(python_starter)
 find_package(catkin REQUIRED COMPONENTS
   rospy
   std_msgs
+  rostest
 )
 
-catkin_python_setup()
 
 catkin_package()
 
@@ -24,6 +24,7 @@ install(PROGRAMS
    DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 
+add_rostest(tests/example_ros_test.test)
 ## Mark other files for installation (e.g. launch and bag files, etc.)
 # install(FILES
 #   # myfile1
