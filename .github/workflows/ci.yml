@@ -27,7 +27,8 @@ jobs:
           python-version: ${{ matrix.python-version }}
           cache: "pip"
           cache-dependency-path: "**/pyproject.toml"
-      - uses: ros-tooling/setup-ros@v0.7
+      - name: Install ROS
+        uses: ros-tooling/setup-ros@v0.7
         with:
           required-ros-distributions: noetic
       - uses: ros-tooling/action-ros-ci@v0.3
